@@ -1,5 +1,5 @@
-"tracks" project
-================
+"django-tracks" project
+=======================
 
 A basic Django project used to provide a sample database for test purposes.
 
