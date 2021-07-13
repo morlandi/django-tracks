@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>django-tracks</title>
+
+        <style>
+            table {
+                border-collapse: collapse;
+            }
+            table th,
+            table td {
+                border: 1px solid #ccc;
+                padding: 4px 8px;
+            }
+            .numeric {
+                text-align: right;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>django-tracks</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Artist</th>
+                    <th># albumns</th>
+                    <th># tracks</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for artist in artists %}
+                <tr>
+                    <td>{{artist.name}}</td>
+                    <td class="numeric">{{artist.num_albums}}</td>
+                    <td class="numeric">{{artist.num_tracks}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+
+    </body>
+</html>

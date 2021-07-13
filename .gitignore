@@ -3,3 +3,5 @@
 __pycache__
 *.egg
 *.egg-info
+db.sqlite3
+main/local_settings.py
